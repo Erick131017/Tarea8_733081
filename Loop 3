@@ -1,0 +1,30 @@
+
+var i = 500;
+var para = document.getElementById("resultadoParrafo");
+
+
+function esPrimo(num) {
+    if (num <= 1) return false;
+    if (num <= 3) return true;
+
+    if (num % 2 === 0 || num % 3 === 0) return false;
+
+    for (var i = 5; i * i <= num; i += 6) {
+        if (num % i === 0 || num % (i + 2) === 0) return false;
+    }
+
+    return true;
+}
+
+
+do {
+    
+    if (esPrimo(i)) {
+   
+        para.textContent += i + ", ";
+    }
+ 
+    i--;
+} while (i >= 2);
+
+para.textContent = para.textContent.slice(0, -2);
