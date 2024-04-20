@@ -1,0 +1,14 @@
+const nombres = ['Chris', 'Li Kang', 'Anne', 'Francesca', 'Mustafa', 'Tina', 'Bert', 'Jada'];
+const para = document.createElement('p');
+
+function elegirNombre() {
+  const indiceAleatorio = Math.floor(Math.random() * nombres.length);
+  para.textContent = nombres[indiceAleatorio];
+}
+
+elegirNombre();
+
+
+section.innerHTML = ' ';
+
+section.appendChild(para);
