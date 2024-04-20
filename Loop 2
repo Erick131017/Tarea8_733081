@@ -1,0 +1,20 @@
+
+var nombre = "John";
+var para = document.getElementById("resultadoParrafo");
+var agenda = [
+    { nombre: "Alice", telefono: "123-456-7890" },
+    { nombre: "Bob", telefono: "987-654-3210" },
+    { nombre: "John", telefono: "555-123-4567" },
+    { nombre: "Doe", telefono: "555-987-6543" }
+];
+
+
+for (var entrada of agenda) {
+    
+    if (entrada.nombre === nombre) {
+        
+        para.textContent = "Nombre: " + entrada.nombre + ", Teléfono: " + entrada.telefono;
+       
+        break;
+    }
+}
