@@ -1,0 +1,13 @@
+
+var myArray = ["manzana", "plátano", "naranja", "uva"];
+
+var miLista = document.getElementById("miLista");
+
+for (var i = 0; i < myArray.length; i++) {
+    // Crea un nuevo elemento de lista
+    var elementoLista = document.createElement("li"); 
+  
+    elementoLista.textContent = myArray[i];
+    
+    miLista.appendChild(elementoLista);
+}
